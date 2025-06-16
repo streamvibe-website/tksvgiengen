@@ -300,7 +300,17 @@ nav::after {
     width: 100%;
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      text-align: left; /* <-- statt "center" */
+    }
+  
+    .about-text {
+      text-align: left;
+    }
+  }
+  
 
 /* Hero Section: IT-Support */
 
