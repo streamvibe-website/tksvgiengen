@@ -600,7 +600,7 @@
       
       .sponsoren-section h2 {
         font-size: 2.2rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1.5rem;
         color: var(--text-primary);
       }
       
@@ -624,6 +624,7 @@
         filter: grayscale(0%);
         transform: scale(1.05);
       }
+      
 
 .footer {
   background-color: #7f1d1d;
