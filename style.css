@@ -344,17 +344,12 @@
       
       .kontakt-section {
         background: var(--bg-secondary);
-        padding: 6rem 2rem;
+        padding: 5rem 2rem;
         text-align: center;
       }
       
-      .kontakt-container {
-        max-width: 700px;
-        margin: 0 auto;
-      }
-      
       .kontakt-section h2 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         margin-bottom: 1rem;
         color: var(--text-primary);
       }
@@ -362,14 +357,36 @@
       .kontakt-section p {
         font-size: 1.1rem;
         color: var(--text-secondary);
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
       }
       
-      .kontakt-form {
+      .kontakt-icons {
         display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+        justify-content: center;
+        gap: 2.5rem;
+        flex-wrap: wrap;
       }
+      
+      .kontakt-icons a {
+        font-size: 2rem;
+        color: var(--text-primary);
+        opacity: 0.7;
+        transition: all 0.25s ease;
+      }
+      
+      .kontakt-icons a:hover {
+        opacity: 1;
+        transform: scale(1.15);
+      }
+      
+      .kontakt-section {
+        background: var(--bg-primary); /* wie bei .about-section z. B. */
+        padding: 5rem 2rem;
+        text-align: center;
+      }
+      
+      
+      
       
       .form-group {
         display: flex;
