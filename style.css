@@ -711,3 +711,53 @@
   }
   
   
+
+  /* Hamburger-Menü: nur auf mobilen Geräten */
+.burger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--primary);
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .burger {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: white;
+      position: absolute;
+      top: 80px;
+      right: 1.5rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      z-index: 1001;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .nav-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  /* Desktop View: zeigt normale Navigation & versteckt Burger */
+  @media (min-width: 769px) {
+    .nav-links {
+      display: flex !important;
+    }
+  
+    .burger {
+      display: none !important;
+    }
+  }
+  
