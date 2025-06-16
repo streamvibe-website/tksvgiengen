@@ -832,6 +832,7 @@ nav::after {
     }
 }
 
+
 /* Desktop View: zeigt normale Navigation & versteckt Burger */
 @media (min-width: 769px) {
     .nav-links {
