@@ -527,11 +527,27 @@
       }
       
       .position-section h3 {
+        position: relative;
         text-align: center;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
         color: var(--text-primary);
       }
+      
+      .position-section h3::before {
+        content: '';
+        position: absolute;
+        top: -1.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: var(--primary);
+        border-radius: 3px;
+      }
+      
 
 
       .sponsoren-section {
@@ -636,3 +652,25 @@
   font-size: 0.85rem;
   color: #fef2f2;
 }
+
+
+.section-heading {
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 0 auto 4rem;
+    color: var(--text-primary);
+    font-weight: 700;
+    max-width: 100%;
+  }
+  
+
+  .section-divider {
+    margin: 5rem auto 2rem;
+    width: 120px;
+    height: 3px;
+    background: var(--primary);
+    border: none;
+    border-radius: 3px;
+  }
+  
+  
