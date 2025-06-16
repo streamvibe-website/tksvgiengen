@@ -255,6 +255,15 @@
     }
   </script>
   
+  <script>
+    // Immer zum Seitenanfang scrollen beim Neuladen
+    if (window.location.hash) {
+      history.replaceState(null, null, ' ');
+      window.scrollTo(0, 0);
+    }
+  </script>
+  
+
 
 </body>
 </html>
